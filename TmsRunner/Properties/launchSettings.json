@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "TmsRunner": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "TMS_TEST_RUN_NAME": "NUnit",
+        "TMS_CERT_VALIDATION": false
+      },
+      "commandLineArgs": "--runner \"/usr/local/share/dotnet/sdk/6.0.302/vstest.console.dll\" --testassembly \"/Users/dmitry.gridnev/github/dotnet-examples/NUnitTests/NUnitTests/bin/Debug/net6.0/NUnitTests.dll\" --debug"
+     }
+  }
+}

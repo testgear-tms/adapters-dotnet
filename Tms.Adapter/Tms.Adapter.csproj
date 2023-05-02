@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Version>1.0.0</Version>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <IsPackable>true</IsPackable>
+        <Title>TestGear MSTest/NUnit adapter</Title>
+        <PackageId>TestGear.Adapter</PackageId>
+        <Authors>Integration team</Authors>
+        <Description>TestGear MSTest/NUnit adapter</Description>
+        <Copyright>Copyright (c) 2019 - 2023 TestGear</Copyright>
+        <RepositoryUrl>https://github.com/testgear-tms/adapters-dotnet</RepositoryUrl>
+        <PackageProjectUrl>https://test-gear.io</PackageProjectUrl>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../LICENSE.md" Pack="true" PackagePath="$(PackageLicenseFile)" />
+        <None Include="./README.md" Pack="true" PackagePath="$(PackageReadmeFile)" />
+    </ItemGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Fody" Version="6.6.4" />
+        <PackageReference Include="MethodBoundaryAspect.Fody" Version="2.0.148" />
+        <PackageReference Include="Microsoft.TestPlatform.ObjectModel" Version="17.5.0" />
+        <PackageReference Include="System.Text.Json" Version="7.0.2" />
+    </ItemGroup>
+
+</Project>
