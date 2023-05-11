@@ -65,7 +65,7 @@ jobs:
         run: |
           dotnet nuget push ${{ env.NUGET_DIR }}/*.nupkg \
           --skip-duplicate \
-          --source https://nuget.pkg.github.com/testit-tms/index.json \
+          --source https://nuget.pkg.github.com/testgear-tms/index.json \
           --api-key ${{ secrets.GITHUB_TOKEN }}
   
   runner_build:
