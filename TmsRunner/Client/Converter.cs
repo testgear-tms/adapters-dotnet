@@ -54,7 +54,8 @@ public class Converter
             Teardown = ConvertStepsToModel(dto.Teardown),
             Title = dto.Title,
             Description = dto.Description,
-            Labels = ConvertLabelsToModel(dto.Labels)
+            Labels = ConvertLabelsToModel(dto.Labels),
+            IsFlaky = dto.IsFlaky
         };
     }
 
