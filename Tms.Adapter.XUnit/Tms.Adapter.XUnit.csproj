@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Version>1.0.2</Version>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <IsPackable>true</IsPackable>
+        <Title>Test Gear XUnit adapter</Title>
+        <PackageId>TestGear.Adapter.XUnit</PackageId>
+        <Authors>Integration team</Authors>
+        <Description>Test Gear XUnit adapter</Description>
+        <Copyright>Copyright (c) 2019 - 2023 Test Gear</Copyright>
+        <RepositoryUrl>https://github.com/testgear-tms/adapters-dotnet</RepositoryUrl>
+        <PackageProjectUrl>https://test-gear.io</PackageProjectUrl>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AspectInjector" Version="2.8.1" />
+      <PackageReference Include="xunit.core" Version="2.4.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Tms.Adapter.Core\Tms.Adapter.Core.csproj" />
+    </ItemGroup>
+
+</Project>

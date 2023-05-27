@@ -1,15 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <TargetFramework>netstandard2.1</TargetFramework>
         <Nullable>enable</Nullable>
         <IsPackable>true</IsPackable>
-        <Title>TestGear MSTest/NUnit adapter</Title>
+        <Title>Test Gear MSTest/UNit adapter</Title>
         <PackageId>TestGear.Adapter</PackageId>
         <Authors>Integration team</Authors>
-        <Description>TestGear MSTest/NUnit adapter</Description>
-        <Copyright>Copyright (c) 2019 - 2023 TestGear</Copyright>
+        <Description>Test Gear MSTest/UNit adapter</Description>
+        <Copyright>Copyright (c) 2019 - 2023 Test Gear</Copyright>
         <RepositoryUrl>https://github.com/testgear-tms/adapters-dotnet</RepositoryUrl>
         <PackageProjectUrl>https://test-gear.io</PackageProjectUrl>
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>

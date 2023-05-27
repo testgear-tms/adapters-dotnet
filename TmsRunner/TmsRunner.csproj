@@ -1,17 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Version>1.0.0</Version>
+    <Version>1.0.2</Version>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Title>TestGear runner</Title>
+    <Title>Test Gear runner</Title>
     <Authors>Integration team</Authors>
-    <Description>TestGear runner</Description>
-    <Copyright>Copyright (c) 2019 - 2023 TestGear</Copyright>
+    <Description>Test Gear runner</Description>
+    <Copyright>Copyright (c) 2019 - 2023 Test Gear</Copyright>
     <RepositoryUrl>https://github.com/testgear-tms/adapters-dotnet</RepositoryUrl>
-    <PackageProjectUrl>https://testgear.software</PackageProjectUrl>
+    <PackageProjectUrl>https://test-gear.io</PackageProjectUrl>
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>true</SelfContained>
     <RuntimeIdentifiers>win-x64;linux-x64;osx-x64</RuntimeIdentifiers>
@@ -34,7 +34,7 @@
     <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
     <PackageReference Include="System.Runtime" Version="4.3.1" />
-    <PackageReference Include="TestGear.Client" Version="2.0.0" />
+    <PackageReference Include="TestGear.ApiClient" Version="0.2.1" />
   </ItemGroup>
 
   <ItemGroup>
